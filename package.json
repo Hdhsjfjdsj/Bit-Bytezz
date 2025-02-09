@@ -1,0 +1,50 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@tensorflow-models/posenet": "^2.2.2",
+    "@tensorflow/tfjs": "^4.22.0",
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "cra-template": "1.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.5",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.4"
+  }
+}

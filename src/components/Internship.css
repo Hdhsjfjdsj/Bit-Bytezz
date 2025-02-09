@@ -1,0 +1,163 @@
+/* Color Palette */
+:root {
+    --navbar-footer: #2C3E50;
+    --button-highlight: #F39C12;
+    --cta-button: #E74C3C;
+    --eligibility-button: #3498DB;
+    --background: linear-gradient(135deg, #2C3E50, #0F3460);
+    --text-heading: #F4F4F8;
+    --hover-bg: #0F3460;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Internship Page Styles */
+.internship-container {
+    font-family: 'Arial', sans-serif;
+    background: var(--background);
+    color: var(--text-heading);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.internship-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.internship-list {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.internship-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    flex-grow: 1;
+    min-height: 150px;
+    height: auto;
+}
+
+.internship-card:hover {
+    background: var(--hover-bg);
+    transform: scale(1.02);
+}
+
+.internship-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 65%;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.job-description {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.cta-button, .eligibility-button {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    width: 100%;
+}
+
+.cta-button {
+    background: var(--cta-button);
+    color: white;
+}
+
+.cta-button:hover {
+    background: #C0392B;
+}
+
+.eligibility-button {
+    background: var(--eligibility-button);
+    color: white;
+}
+
+.eligibility-button:hover {
+    background: #2471A3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .internship-container {
+        padding-top: 100px;
+    }
+
+    .internship-card {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .button-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cta-button, .eligibility-button {
+        width: 100%;
+    }
+
+    .company-logo {
+        width: 40px;
+        height: 40px;
+    }
+}

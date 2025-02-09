@@ -1,0 +1,198 @@
+/* Reset and base styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Gotham', sans-serif;
+    background-color: #1A1A2E; /* Dark Blue Background */
+    color: #F4F4F8; /* Light Gray Text */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2C3E50; /* Dark Blue */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Layout containers */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Assessment Form */
+.assessment-form {
+    flex: 1;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #ECF0F1; /* Light Gray */
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    transition: width 0.4s ease-in-out;
+}
+
+/* Questions */
+.question {
+    background-color: #0F3460; /* Deep Navy Blue */
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.question:hover {
+    transform: translateY(-2px);
+}
+
+.question-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F4F4F8; /* Light Gray */
+    margin-bottom: 1.5rem;
+}
+
+/* Options */
+.options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    background-color: #2C3E50; /* Dark Blue */
+    border: 2px solid #ECF0F1; /* Light Gray */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.option-label:hover {
+    border-color: #F39C12; /* Yellow-Orange */
+    background-color: #0F3460; /* Deep Navy Blue */
+    transform: translateY(-1px);
+}
+
+.option-label.selected {
+    background-color: #F39C12; /* Yellow-Orange */
+    border-color: #F39C12;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(243, 156, 18, 0.2);
+}
+
+/* Buttons */
+.submit-button, .reset-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.submit-button {
+    background: linear-gradient(135deg, #E74C3C, #C0392B); /* Soft Red */
+    color: white;
+    margin: 2rem auto;
+    display: block;
+    min-width: 200px;
+}
+
+.submit-button:hover {
+    background: linear-gradient(135deg, #C0392B, #E74C3C);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(231, 76, 60, 0.2);
+}
+
+/* Results */
+.result-box {
+    background: linear-gradient(135deg, #F39C12, #F1C40F); /* Yellow-Orange */
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(243, 156, 18, 0.2);
+}
+
+.result-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.result-box p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+
+    .assessment-form {
+        padding: 1rem;
+    }
+
+    .question {
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .options {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 1.2rem;
+    }
+
+    .question-text {
+        font-size: 1.1rem;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}

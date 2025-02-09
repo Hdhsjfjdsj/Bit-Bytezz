@@ -1,0 +1,194 @@
+/* General App Styles */
+.app-container {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background: #2C3E50; /* Dark Blue */
+    color: #ECF0F1; /* Light Gray */
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Header */
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #F39C12; /* Yellow-Orange */
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    color: #ECF0F1; /* Light Gray */
+    margin-bottom: 20px;
+}
+
+/* Tree Structure Container */
+.tree-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 90vw;
+    padding-bottom: 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #F39C12 transparent; /* Yellow-Orange */
+}
+
+/* Tree Node */
+.tree-node {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Node Styling */
+.node {
+    font-size: 18px;
+    padding: 14px 24px;
+    margin: 12px auto;
+    border-radius: 12px;
+    background: rgba(243, 156, 18, 0.2); /* Yellow-Orange */
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #F39C12; /* Yellow-Orange */
+    box-shadow: 0 6px 12px rgba(243, 156, 18, 0.3); /* Yellow-Orange */
+    backdrop-filter: blur(10px);
+    max-width: 200px;
+    word-wrap: break-word;
+}
+
+.node:hover {
+    background: rgba(243, 156, 18, 0.5); /* Yellow-Orange */
+    transform: translateY(-3px);
+}
+
+/* Selected Node */
+.selected {
+    background: rgba(231, 76, 60, 0.3); /* Soft Red */
+    border: 2px solid #E74C3C; /* Soft Red */
+    box-shadow: 0 6px 12px rgba(231, 76, 60, 0.6); /* Soft Red */
+}
+
+/* Child Node Container */
+.child-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    position: relative;
+}
+
+.child-container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background: #F39C12; /* Yellow-Orange */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .node {
+        font-size: 14px;
+        padding: 10px 16px;
+        margin: 8px auto;
+        max-width: 150px;
+    }
+    .child-container {
+        gap: 10px;
+    }
+    .tree-container {
+        max-width: 100vw;
+        overflow-x: auto;
+    }
+}
+
+/* Node Action Button */
+.node-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.action-btn {
+    background: #F39C12; /* Yellow-Orange */
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(243, 156, 18, 0.3); /* Yellow-Orange */
+    backdrop-filter: blur(10px);
+}
+
+.action-btn:hover {
+    background: #F39C12; /* Yellow-Orange */
+    transform: scale(1.1);
+}
+
+/* Course Details */
+.course-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    color: #ECF0F1; /* Light Gray */
+    text-align: left;
+    width: 80%;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: #D1D1D1; /* Light Gray */
+    font-size: 14px;
+}
+/* Course Details Box */
+/* Course Details Box */
+.course-details {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px; /* Increased padding for more internal space */
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    color: #ffffff;
+    text-align: left;
+    width: 90%; /* Increased width to 90% of the container */
+    max-height: 500px; /* Increased max height for more space */
+    overflow-y: auto; /* Keep the scroll functionality */
+    word-wrap: break-word; /* Break long words */
+    white-space: pre-wrap; /* Preserve whitespace and allow wrapping */
+}
+
+/* For the error or loading messages */
+.info-box p {
+    color: #f39c12;
+    font-weight: bold;
+    margin: 0;
+}

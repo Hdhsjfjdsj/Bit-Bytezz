@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #1A1A2E;
+    color: #F4F4F8;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #0F3460;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.navbar h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navbar select {
+    background-color: #0F3460;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Home Page */
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 32px;
+    text-align: left; /* Align text to the left */
+    flex-direction: row; /* Arrange text and image in a row */
+    gap: 40px; /* Adds spacing between text and image */
+}
+
+.home-text {
+    max-width: 600px;
+    flex: 1; /* Allows the text to take available space */
+}
+
+.home-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.home-image {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.home-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+}
+
+/* Career Intro */
+.career-intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.career-intro h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Career Sections */
+.career-sections {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.section {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.section:hover {
+    background-color: #0F3460;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+}
+
+.section-id {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FACC15;
+    margin-right: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.section-description {
+    font-size: 20px;
+    max-width: 50%;
+    text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        max-width: 100%;
+    }
+
+    .home-image img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-content {
+        flex-direction: column;
+    }
+
+    .section-id {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

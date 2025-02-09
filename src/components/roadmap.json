@@ -1,0 +1,206 @@
+{
+    "label": "10th Grade",
+    "children": [
+      {
+        "label": "PUC",
+        "children": [
+          {
+            "label": "Science",
+            "children": [
+              {
+                "label": "JEE",
+                "children": [
+                  { "label": "Engineering" },
+                  { "label": "Architecture" }
+                ]
+              },
+              {
+                "label": "NEET",
+                "children": [
+                  { "label": "MBBS" },
+                  { "label": "Dentistry" },
+                  { "label": "Pharmacy" }
+                ]
+              },
+              {
+                "label": "NDA",
+                "children": [
+                  { "label": "Indian Army" },
+                  { "label": "Indian Navy" },
+                  { "label": "Indian Air Force" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Commerce",
+            "children": [
+              {
+                "label": "CA",
+                "children": [
+                  { "label": "Chartered Accountant" },
+                  { "label": "Auditing" }
+                ]
+              },
+              {
+                "label": "CS",
+                "children": [
+                  { "label": "Company Secretary" },
+                  { "label": "Corporate Law" }
+                ]
+              },
+              {
+                "label": "B.Com",
+                "children": [
+                  { "label": "Banking & Finance" },
+                  { "label": "Investment Banking" }
+                ]
+              },
+              {
+                "label": "Management",
+                "children": [
+                  { "label": "BBA" },
+                  { "label": "MBA" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Arts",
+            "children": [
+              {
+                "label": "BA",
+                "children": [
+                  { "label": "Psychology" },
+                  { "label": "History" },
+                  { "label": "Sociology" }
+                ]
+              },
+              {
+                "label": "Design",
+                "children": [
+                  { "label": "Fashion Designing" },
+                  { "label": "Interior Designing" }
+                ]
+              },
+              {
+                "label": "Fine Arts",
+                "children": [
+                  { "label": "Painting" },
+                  { "label": "Sculpture" },
+                  { "label": "Animation" }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Vocational Courses",
+            "children": [
+              {
+                "label": "Cooking",
+                "children": [
+                  { "label": "Culinary Arts" },
+                  { "label": "Baking" },
+                  { "label": "Restaurant Management" }
+                ]
+              },
+              {
+                "label": "Fashion Designing",
+                "children": [
+                  { "label": "Fashion Merchandising" },
+                  { "label": "Textile Designing" },
+                  { "label": "Apparel Production" }
+                ]
+              },
+              {
+                "label": "Event Management",
+                "children": [
+                  { "label": "Wedding Planning" },
+                  { "label": "Corporate Events" },
+                  { "label": "Public Relations" }
+                ]
+              },
+              {
+                "label": "Photography",
+                "children": [
+                  { "label": "Fashion Photography" },
+                  { "label": "Product Photography" },
+                  { "label": "Wedding Photography" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Diploma",
+        "children": [
+          {
+            "label": "Polytechnic",
+            "children": [
+              { "label": "Mechanical" },
+              { "label": "Electrical" },
+              { "label": "Civil" },
+              { "label": "Computer Science" }
+            ]
+          },
+          {
+            "label": "ITI",
+            "children": [
+              { "label": "Fitter" },
+              { "label": "Electrician" },
+              { "label": "Welding" },
+              { "label": "Plumber" }
+            ]
+          },
+          {
+            "label": "Creative Arts",
+            "children": [
+              { "label": "Graphic Designing" },
+              { "label": "Web Designing" },
+              { "label": "Animation" }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "Other Courses",
+        "children": [
+          {
+            "label": "Language Courses",
+            "children": [
+              { "label": "English Literature" },
+              { "label": "French" },
+              { "label": "Spanish" },
+              { "label": "German" }
+            ]
+          },
+          {
+            "label": "Music",
+            "children": [
+              { "label": "Classical Music" },
+              { "label": "Western Music" },
+              { "label": "DJing" }
+            ]
+          },
+          {
+            "label": "Sports",
+            "children": [
+              { "label": "Football" },
+              { "label": "Cricket" },
+              { "label": "Basketball" },
+              { "label": "Yoga" }
+            ]
+          },
+          {
+            "label": "Travel & Tourism",
+            "children": [
+              { "label": "Tour Guide" },
+              { "label": "Hospitality Management" },
+              { "label": "Tourism Marketing" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
